@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+        <a href="#home" style="--i:1" class="active">Home</a>
+        <a href="#about" style="--i:2">About</a>
+        <a href="#services" style="--i:3">Services</a>
+        <a href="#skills" style="--i:4">Skills</a>
+        <a href="#portfolio" style="--i:5">Portfolio</a> <!-- FIXED LINK -->
+        <a href="#contact" style="--i:6">Contact</a> 
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Sofiya Praveen</h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>I'm a web Designer with extensive experience for over 3 years. <br>
+        Expertise is to create and design websites, Frontend UI, and more.</p>
+        <div class="home-sci">
+            <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+            <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+            <a href="#" style="--i:9"><i class='bx bxl-whatsapp-square'></i></a>
+            <a href="https://www.linkedin.com/in/sofiya-praveen-342379290/" style="--i:10"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <a href="#about" class="btn-box">More About Me</a>
+    </div>
+    <span class="home-imghover"></span>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="image/sofu.jpg" alt="Sofiya Praveen">
+    </div>
+    <div class="about-text">
+        <h2>About<span>Me</span></h2>
+        <h4>Full Stack Developer!</h4>
+        <p>I am a passionate Full-Stack Developer skilled in HTML, CSS, JavaScript, React, Node.js, and MongoDB. I love building user-friendly web applications and working with both front-end and back-end technologies. Always eager to learn, I’m excited to grow and contribute to innovative projects.</p>
+        <a href="#about" class="btn-box">More About Me</a>    
+    </div>
+</section>
+
+<!-- Services Section
+<section class="services" id="services">
+    <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bx-code' style='color:#00eeff'></i>
+                <h2>Web Development</h2>
+                <p>Building responsive, scalable web apps using React.js, Node.js, and MongoDB.</p>
+                <a href="#" class="read">Learn More</a>    
+            </div>
+            <div>
+                <i class='bx bx-crop' style='color:#00eeff'></i>
+                <h2>UI/UX Design</h2>
+                <p>Crafting intuitive and visually appealing designs in Figma and Adobe XD.</p>
+                <a href="#" class="read">Learn More</a>    
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Service section new add -->
+<!-- Services Section -->
+<section class="services" id="services">
+  <div class="container">
+    <h1 class="sub-title">My <span>Services</span></h1>
+    <div class="services-list">
+      <div class="service-card">
+        <i class='bx bx-code' style='color:#00eeff'></i>
+        <h2>Web Development</h2>
+        <p>Building responsive, scalable web apps using React.js, Node.js, and MongoDB.</p>
+        <a href="#" class="read">Learn More</a>    
+      </div>
+      <div class="service-card">
+        <i class='bx bx-crop' style='color:#00eeff'></i>
+        <h2>UI/UX Design</h2>
+        <p>Crafting intuitive and visually appealing designs in Figma and Adobe XD.</p>
+        <a href="#" class="read">Learn More</a>    
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+/* Section Styling */
+.services {
+  padding: 60px 20px;
+  background: #0a0a0a;
+  color: #fff;
+  text-align: center;
+ 
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  
+}
+
+.sub-title span {
+  color: #00eeff;
+}
+
+/* Services List */
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.service-card {
+  flex: 1 1 300px;
+  max-width: 450px;
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.service-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.service-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-card a.read {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #00eeff;
+  color: #111;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.service-card a.read:hover {
+  background: #00c2cc;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-8px);
+  background: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+
+
+<!-- Skills Section -->
+<h1 class="sub-title" id="skills">My <span>Skills</span></h1>
+<!-- Skills Section -->
+<!-- <section id="skills" class="skills-sec">
+  <h1 class="sub-title">My <span>Skills</span></h1> -->
+
+  <div class="skills-grid">
+    <!-- Skill -->
+    <div class="skill">
+      <div class="skill-head">
+        <i class='bx bxl-html5'></i><span>HTML</span>
+        <span class="val">90%</span>
+      </div>
+      <div class="bar"><span style="--val:90%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <i class='bx bxl-css3'></i><span>CSS</span>
+        <span class="val">85%</span>
+      </div>
+      <div class="bar"><span style="--val:85%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <i class='bx bxl-javascript'></i><span>JavaScript</span>
+        <span class="val">80%</span>
+      </div>
+      <div class="bar"><span style="--val:80%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <i class='bx bxl-react'></i><span>ReactJS</span>
+        <span class="val">75%</span>
+      </div>
+      <div class="bar"><span style="--val:75%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <i class='bx bxl-nodejs'></i><span>Node.js</span>
+        <span class="val">70%</span>
+      </div>
+      <div class="bar"><span style="--val:70%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-head">
+        <i class='bx bxl-C++'></i><span>C++</span>
+        <span class="val">65%</span>
+      </div>
+      <div class="bar"><span style="--val:65%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head">
+        <i class='bx bxl-C'></i><span>C</span>
+        <span class="val">70%</span>
+      </div>
+      <div class="bar"><span style="--val:70%"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Keep your existing skills HTML here -->
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <div class="main-text" id="project">
+        <h2>Latest<span>Projects</span></h2>
+        <div class="portfolio-content">
+
+            <!-- Project 1 -->
+            <div class="row">
+                <img src="image/InterviewMate.png" alt="InterviewMate Project">
+                <div class="layer">
+                    <h5>InterviewMate</h5>
+                    <!-- <p>Developed using ReactJS and Node.js, InterviewMate features a multi-step interview process with AI-generated questions, real-time feedback, and detailed performance analytics.</p> -->
+                    <a href="https://interviewmatebeta.vercel.app" target="_blank"><i class='bx bx-link-external' style="color:aliceblue;"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="row">
+                <img src="image/elearning.png" alt="E-Learning Project">
+                <div class="layer">
+                    <h5>E-Learning Platform</h5>
+                    <!-- <p>An interactive learning platform offering online courses, quizzes, and progress tracking for learners worldwide.</p> -->
+                    <a href="https://shiny-tartufo-a4a7ae.netlify.app/" target="_blank"><i class='bx bx-link-external' style="color:aliceblue;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact<span>Me</span></h2>
+        <h4>Let's work Together</h4>
+        <p>Hello I'm Sofiya. Currently pursuing Bachelor of Technology in Computer Science and Engineering, Bhopal, M.P.</p>
+        <div class="contact-list">
+            <li><i class='bx bxs-send'></i> sofiyapraveen853@gmail.com</li>
+            <li><i class='bx bxs-phone'></i> 6206038246</li>
+        </div>
+        <div class="contact-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>                
+            <a href="https://www.linkedin.com/in/sofiya-praveen-342379290/"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form action="">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="text" placeholder="Enter Your Subject">
+            <textarea cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="Submit" class="send">
+        </form>
+    </div>
+</section>
+
+<div class="last-text">
+    <p>Developed with love by Sofiya Praveen © 2025</p>
+</div>
+<a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+<!-- JS -->
+<script>
+    // Typed.js animation
+    var typed = new Typed(".text", {
+        strings: ["Frontend Developer", "Web Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    });
+</script>
+
+</body>
+</html>
